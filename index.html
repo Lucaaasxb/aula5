@@ -26,8 +26,9 @@
         }
 
         .carousel-item img {
-            max-height: 500px;
+            height: 500px;
             object-fit: cover;
+
         }
 
         .newsletter-flutuante {
@@ -93,12 +94,78 @@
             color: #666;
             cursor: pointer;
         }
-
+        .newsletter-fechar:hover {
+            color: #000;
+        }
+        .newsletter-fechar:active {
+            color: #000;
+        }
+        .newsletter-fechar:focus {
+            outline: none;
+        }
+        .newsletter-fechar:focus-visible {
+            outline: none;
+        }
+        .card img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .card-text {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
         .card {
-            width: 300px;
-            background-color: #000000;
-
-
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
+        transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-body {
+            text-align: center;
+            background-color: #f8f9fa;
+            border-radius: 0 0 10px 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
+        }
+        .card img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
         }
     </style>
     </heaFFd>
@@ -149,9 +216,6 @@
     </nav>
 
     </div>
-    <div class="container mt-5 pt-5">
-        <h1>Bem-vindo à GeekStore!</h1>
-        <p>Aqui você encontra os melhores produtos geek.</p>
         <div class="newsletter-flutuante" id="newsletterBox">
             <span class="newsletter-fechar"
                 onclick="document.getElementById('newsletterBox').style.display='none';">&times;</span>
@@ -171,13 +235,13 @@
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="Imagens/deadpool-wolverine-piticas-3.jpg" class="d-block w-100" alt="...">
+                    <img src="Imagens/carrosel 1.webp" class="d-block w-100" alt="..." href="funkopop.html">
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="Imagens/piticas-the-flash.jpg" class="d-block w-100" alt="...">
+                    <img src="Imagens/carrosel 2.webp" class="d-block w-100" alt="..." href="funkopop.html">
                 </div>
                 <div class="carousel-item">
-                    <img src="Imagens/gkpb-piticas-spyxfamily-fate.jpg" class="d-block w-100" alt="...">
+                    <img src="Imagens/carrosel 3.webp" class="d-block w-100" alt="..." href="funkopop.html">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -195,48 +259,40 @@
 
     </div>
        
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card">
-                <img src="Imagens/camisa1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center">
+            acesse ja as nossas novidades
+            <br>
+        </h1>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Pink Panther.webp" class=card-img-top" alt="Camiseta 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pops</h5>
+                        <p class="card-text"></p>
+                        <a href="funkopop.html" class="btn btn-primary">Comprar</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/camiseta rick and morty.webp" class="card-img-top" alt="Camiseta 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisetas</h5>
+                        <p class="card-text"></p>
+                        <a href="camisetas.html" class="btn btn-primary">Comprar</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class= "text-light bg-dark">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Garfield.webp" class="card-img-top" alt="Camiseta 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pop Garfield</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,9 +301,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-    <div class="card" style="width: 18rem;">
-    </div>
-    </div>
 </body>
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 GeekStore. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Lucas</p>
 
 </html>
