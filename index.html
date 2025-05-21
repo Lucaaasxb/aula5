@@ -17,12 +17,8 @@
             height: 100vh;
             display: flex;
             flex-direction: column;
-            
-            
-        }
 
-        .navbar {
-            margin-bottom: 20px;
+
         }
 
         .container {
@@ -103,32 +99,40 @@
             color: #666;
             cursor: pointer;
         }
+
         .newsletter-fechar:hover {
             color: #000;
         }
+
         .newsletter-fechar:active {
             color: #000;
         }
+
         .newsletter-fechar:focus {
             outline: none;
         }
+
         .newsletter-fechar:focus-visible {
             outline: none;
         }
+
         .card img {
             height: 300px;
             object-fit: cover;
         }
+
         .card-title {
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 10px;
             text-align: center;
         }
+
         .card-text {
             font-size: 1.2rem;
             font-weight: bold;
         }
+
         .btn-primary {
             background-color: #007bff;
             border: none;
@@ -137,16 +141,19 @@
             font-size: 1rem;
             transition: background-color 0.3s;
         }
+
         .card {
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
-        transition: transform 0.2s;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
+            transition: transform 0.2s;
         }
+
         .card:hover {
             transform: scale(1.05);
         }
+
         .card-body {
             text-align: center;
             background-color: #f8f9fa;
@@ -154,20 +161,24 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
         }
+
         .card img {
             height: 300px;
             object-fit: cover;
         }
+
         .card-title {
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 10px;
         }
+
         .card-text {
             font-size: 1.2rem;
             font-weight: bold;
             margin-bottom: 10px;
         }
+
         .btn-primary {
             background-color: #007bff;
             border: none;
@@ -176,77 +187,45 @@
             font-size: 1rem;
             transition: background-color 0.3s;
         }
-        .carrrosel{
+
+        .carrrosel {
             height: 500px;
             width: 100%;
-            object-fit: cover;  
-            
-        }
+            object-fit: cover;
 
+        }
     </style>
-    </heaFFd>
+</head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">GeekStore</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">GeekStore</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="parcerias.html">Parcerias</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Produtos
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="camisetas.html">Camisetas</a></li>
-                                <li><a class="dropdown-item" href="funkopop.html">Funko pop</a></li>
-                                <li><a class="dropdown-item" href="gamers.html">gamers</a></li>
-                                <li><a class="dropdown-item" href="acessorios.html">acessórios</a></li>
-                          
-                            </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="menu"></div>
+    <script>
+        //carregar o conteudo do menu.html
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o menu:', error));
+
+    </script>
 
     </div>
-        <div class="newsletter-flutuante" id="newsletterBox">
-            <span class="newsletter-fechar"
-                onclick="document.getElementById('newsletterBox').style.display='none';">&times;</span>
-            <h3>Assine a Newsletter</h3>
-            <p>Receba novidades no seu e-mail!</p>
-            <form action="https://SEU_BACKEND_OU_SERVICO.com" method="POST">
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <button type="submit">Inscrever-se</button>
-            </form>
-        </div>
-        <script>
-            setTimeout(function () {
-                document.getElementById('newsletterBox').style.display = 'block';
-            }, 5000);
-        </script>
+    <div class="newsletter-flutuante" id="newsletterBox">
+        <span class="newsletter-fechar"
+            onclick="document.getElementById('newsletterBox').style.display='none';">&times;</span>
+        <h3>Assine a Newsletter</h3>
+        <p>Receba novidades no seu e-mail!</p>
+        <form action="https://SEU_BACKEND_OU_SERVICO.com" method="POST">
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </div>
+    <script>
+        setTimeout(function () {
+            document.getElementById('newsletterBox').style.display = 'block';
+        }, 5000);
+    </script>
 
     <div class="container mt-4 pt-4">
 
@@ -276,7 +255,7 @@
         <div class="card" style="width: 18rem;"></div>
 
     </div>
-       
+
     <div class="container mt-5 pt-5">
         <h1 class="text-center">
             acesse ja as nossas novidades
@@ -289,7 +268,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Funko Pops</h5>
                         <p class="card-text"></p>
-                        <a href="funkopop.html" class="btn btn-primary">Comprar</a>
+                        <a href="funkopop.html" class="btn btn-primary">Acesse Já</a>
                     </div>
                 </div>
             </div>
@@ -299,7 +278,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Camisetas</h5>
                         <p class="card-text"></p>
-                        <a href="camisetas.html" class="btn btn-primary">Comprar</a>
+                        <a href="camisetas.html" class="btn btn-primary">Acesse Já</a>
                     </div>
                 </div>
             </div>
@@ -307,9 +286,9 @@
                 <div class="card">
                     <img src="Imagens/" class="card-img-top" alt="#">
                     <div class="card-body">
-                        <h5 class="card-title">#</h5>
+                        <h5 class="card-title">Acessórios</h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+                        <a href="acessorios.html" class="btn btn-primary">Acesse Já</a>
                     </div>
                 </div>
             </div>
