@@ -7,172 +7,8 @@
     <title>Funko Pop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-    body {
-        background-color: #adb5bd;
-    }
-    .card {
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
-        transition: transform 0.2s;
-    }
-    .card:hover {
-        transform: scale(1.05);
-
-    }
-    .card-body {
-        text-align: center;
-        background-color: #f8f9fa;
-        border-radius: 0 0 10px 10px;
-        padding: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);  
-    }
-    .card img {
-        height: 300px;
-        object-fit: cover;
-    }
-    .card-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-    .card-text {
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-
-    }
-    .btn-primary {
-        background-color: #007bff;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 1rem;
-        transition: background-color 0.3s;
-    }
-    .btn-primary:hover {
-        background-color: #0056b3;
-        color: #fff;
-        text-decoration: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
-    }
-    .navbar {
-        margin-bottom: 20px;
-    }
-    .offcanvas-body {
-        background-color: #343a40;
-    }
-    .offcanvas-header {
-        border-bottom: 1px solid #495057;
-    }
-    .offcanvas-title {
-        color: #fff;
-    }
-    .offcanvas-body a {
-        color: #fff;
-    }
-    .offcanvas-body a:hover {
-        color: #007bff;
-        text-decoration: none;
-    }
-    .offcanvas-body .nav-link {
-        padding: 10px 15px;
-    }
-    .offcanvas-body .nav-link:hover {
-        background-color: #495057;
-        border-radius: 5px;
-    }
-    .offcanvas-body .dropdown-menu {
-        background-color: #343a40;
-    }
-    .offcanvas-body .dropdown-item {
-        color: #fff;
-    }
-    .offcanvas-body .dropdown-item:hover {
-        background-color: #495057;
-        color: #007bff;
-    }
-    .offcanvas-body .dropdown-toggle {
-        color: #fff;
-    }
-    .offcanvas-body .dropdown-toggle:hover {
-        color: #007bff;
-        text-decoration: none;
-    }
-    .offcanvas-body .form-control {
-        background-color: #495057;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-    }
-    .offcanvas-body .form-control:focus {
-        background-color: #495057;
-        color: #fff;
-        border: none;
-        box-shadow: none;
-    }
-    .offcanvas-body .btn-outline-success {
-        color: #fff;
-        border-color: #fff;
-    }
-    .offcanvas-body .btn-outline-success:hover {
-        background-color: #fff;
-        color: #343a40;
-        border-color: #fff;
-    }
-    .offcanvas-body .btn-outline-success:focus {
-        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-    }
-    .footer {
-        background-color: #343a40;
-        color: #fff;
-        padding: 20px 0;
-    }
-    .footer p {
-        margin: 0;
-    }
-    .footer a {
-        color: #fff;
-        text-decoration: none;
-    }
-    .footer a:hover {
-        text-decoration: underline;
-    }
-    .footer .social-icons a {
-        margin: 0 10px;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    .footer .social-icons a:hover {
-        color: #007bff;
-    }
-    .footer .social-icons {
-        margin-top: 10px;
-    }
-    .footer .social-icons a {
-        margin: 0 10px;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    .footer .social-icons a:hover {
-        color: #007bff;
-    }
-    .footer .social-icons {
-        margin-top: 10px;
-    }
-    .footer .social-icons a {
-        margin: 0 10px;
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    .footer .social-icons a:hover {
-        color: #007bff;
-    }
-</style>
 
 <body>
     <div id="menu"></div>
@@ -184,113 +20,132 @@
                 document.getElementById('menu').innerHTML = data;
             })
             .catch(error => console.error('Erro ao carregar o menu:', error));
-
     </script>
-
-        <div class="container mt-5 pt-5">
-            <h1 class="text-center">Funko Pops</h1>
-            <div class="row mt-4">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/Funko Pop Dale.webp" class=card-img-top" alt="Camiseta 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Funko Pop Dale</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/Funko Pop Envy.webp" class="card-img-top" alt="Camiseta 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Funko Pop Envy</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/Funko Pop Garfield.webp" class="card-img-top" alt="Camiseta 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Funko Pop Garfield</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/Funko Pop Jaq & Gus gus.webp" class="card-img-top" alt="Camiseta 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Funko Pop Jaq & Gus Gus</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/Funko Pop Michael Jackson.webp" class="card-img-top" alt="Camiseta 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Funko Pop Michael Jackson</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/Funko Pop Pink Panther.webp" class="card-img-top" alt="Camiseta 6">
-                        <div class="card-body">
-                            <h5 class="card-title">Funko Pop Pink Panther</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/Funko Pop Sherk.webp" class="card-img-top" alt="Camiseta 7">
-                        <div class="card-body">
-                            <h5 class="card-title">Funko Pop Sherk</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/Funko Pop Stitch.webp" class="card-img-top" alt="Camiseta 8">
-                        <div class="card-body">
-                            <h5 class="card-title">Funko Pop Stitch</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center">Funko Pops</h1>
+        <div class="row mt-4">
            
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-            crossorigin="anonymous"></script>
-    </body>
-    <footer class="footer text-center">
-        <div class="container">
-            <p>&copy; 2023 GeekStore. Todos os direitos reservados.</p>
-            <p><a href="index.html">Home</a> | <a href="parcerias.html">Parcerias</a> | <a href="camisetas.html">Camisetas</a> | <a href="gamers.html">Gamers</a> | <a href="acessorios.html">Acessórios</a></p>
-            <p>Desenvolvido por [Seu Nome]</p>
-            
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Dale.webp" class="card-img-top" alt="Camiseta 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pop Dale</h5>
+                        <p class="card-text">69,90</p>
+                        <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Envy.webp" class="card-img-top" alt="Camiseta 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pop Envy</h5>
+                        <p class="card-text">69,90</p>
+                        <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Garfield.webp" class="card-img-top" alt="Camiseta 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pop Garfield</h5>
+                        <p class="card-text">69,90</p>
+                        <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Jaq & Gus gus.webp" class="card-img-top" alt="Camiseta 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pop Jaq & Gus Gus</h5>
+                        <p class="card-text">69,90</p>
+                        <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Michael Jackson.webp" class="card-img-top" alt="Camiseta 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pop Michael Jackson</h5>
+                        <p class="card-text">69,90</p>
+                        <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Pink Panther.webp" class="card-img-top" alt="Camiseta 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pop Pink Panther</h5>
+                        <p class="card-text">69,90</p>
+                        <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Sherk.webp" class="card-img-top" alt="Camiseta 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pop Sherk</h5>
+                        <p class="card-text">69,90</p>
+                        <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Imagens/Funko Pop Stitch.webp" class="card-img-top" alt="Camiseta 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Funko Pop Stitch</h5>
+                        <p class="card-text">69,90</p>
+                        <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                          </svg>Comprar</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
-    
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+<footer class="footer text-center">
+    <div class="container">
+        <p>&copy; 2023 GeekStore. Todos os direitos reservados.</p>
+        <p><a href="index.html">Home</a> | <a href="parcerias.html">Parcerias</a> | <a
+                href="camisetas.html">Camisetas</a> | <a href="gamers.html">Gamers</a> | <a
+                href="acessorios.html">Acessórios</a></p>
+        <p>Desenvolvido por [Seu Nome]</p>
+
+        <div class="social-icons">
+            <button type="button" a href="#" class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg></button>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
 
 </html>

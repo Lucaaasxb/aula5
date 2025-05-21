@@ -1,0 +1,251 @@
+body {
+    background-color: #adb5bd;
+}
+.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+
+}
+.card-body {
+    text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);  
+}
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.card-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.466);
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.offcanvas-body {
+    background-color: #343a40;
+}
+.offcanvas-header {
+    border-bottom: 1px solid #495057;
+}
+.offcanvas-title {
+    color: #fff;
+}
+.offcanvas-body a {
+    color: #fff;
+}
+.offcanvas-body a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+.offcanvas-body .nav-link {
+    padding: 10px 15px;
+}
+.offcanvas-body .nav-link:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+.offcanvas-body .dropdown-menu {
+    background-color: #343a40;
+}
+.offcanvas-body .dropdown-item {
+    color: #fff;
+}
+.offcanvas-body .dropdown-item:hover {
+    background-color: #495057;
+    color: #007bff;
+}
+.offcanvas-body .dropdown-toggle {
+    color: #fff;
+}
+.offcanvas-body .dropdown-toggle:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+.offcanvas-body .form-control {
+    background-color: #495057;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.offcanvas-body .form-control:focus {
+    background-color: #495057;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+.offcanvas-body .btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+}
+.offcanvas-body .btn-outline-success:hover {
+    background-color: #fff;
+    color: #343a40;
+    border-color: #fff;
+}
+.offcanvas-body .btn-outline-success:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer p {
+    margin: 0;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+.footer .social-icons {
+    margin-top: 10px;
+}
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+.footer .social-icons {
+    margin-top: 10px;
+}
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+.carousel-item img {
+    height: 500px;
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+.newsletter-flutuante {
+    display: none;
+    /* Inicialmente escondido */
+}
+
+@media (max-width: 768px) {
+    .newsletter-flutuante {
+        width: 90%;
+        right: 5%;
+    }
+}
+
+@media (min-width: 769px) {
+    .newsletter-flutuante {
+        width: 300px;
+        right: 20px;
+    }
+}
+
+.newsletter-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+}
+
+.newsletter-flutuante h3 {
+    margin-top: 0;
+}
+
+.newsletter-flutuante input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #adb5bd;
+    border-radius: 4px;
+}
+
+.newsletter-flutuante button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter-fechar {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+}
+
+.newsletter-fechar:hover {
+    color: #000;
+}
+
+.newsletter-fechar:active {
+    color: #000;
+}
+
+.newsletter-fechar:focus {
+    outline: none;
+}
+
+.newsletter-fechar:focus-visible {
+    outline: none;
+}
+
+
+
