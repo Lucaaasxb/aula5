@@ -249,4 +249,36 @@ body {
 
 .toast-container { z-index: 1080; }
 
+.footer {
+    background-color: #343a40;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
 
