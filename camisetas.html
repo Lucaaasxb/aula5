@@ -1,147 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camisetas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-      <!-- Ícones Bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camisetas</title>
+  <link rel="icon" href="Imagens/favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap e Ícones -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="menu"></div>
-    <script>
-        //carregar o conteudo do menu.html
-        fetch('menu.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('menu').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar o menu:', error));
+  <!-- Menu dinâmico -->
+  <div id="menu"></div>
+  <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('menu').innerHTML = data)
+      .catch(error => console.error('Erro ao carregar o menu:', error));
+  </script>
 
-    </script>
-        <div class="container mt-5 pt-5">
-            <h1 class="text-center">Camisetas</h1>
-            <div class="row mt-4">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/camiseta marvel homem aranha run.webp" class="card-img-top" alt="Camiseta 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Camiseta Marvel homem aranha run </h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                              </svg>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/camiseta marvel homem aranha.webp" class="card-img-top" alt="Camiseta 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Camiseta Marvel homem aranha</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                              </svg>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/camiseta jujutsu.jpg" class="card-img-top" alt="Camiseta 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Camiseta jujutsu</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                              </svg>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/camiseta hunter x hunter.jpeg" class="card-img-top" alt="Camiseta 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Camiseta hunter x hunter</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                              </svg>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/camiseta rick and morty.webp" class="card-img-top" alt="Camiseta 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Camiseta Marvel Viúva Negra</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                              </svg>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/camiseta invicible.webp" class="card-img-top" alt="Camiseta 6">
-                        <div class="card-body">
-                            <h5 class="card-title">Camiseta Marvel Pantera Negra</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                              </svg>Comprar</a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/camiseta it.webp" class="card-img-top" alt="Camiseta 7">
-                        <div class="card-body">
-                            <h5 class="card-title">Camiseta Marvel Doutor Estranho</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                              </svg>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="Imagens/camiseta mortal kombat.webp" class="card-img-top" alt="Camiseta 8">
-                        <div class="card-body">
-                            <h5 class="card-title">Camiseta Marvel Loki</h5>
-                            <p class="card-text">69,90</p>
-                            <a href="#" class="btn btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                              </svg>Comprar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Conteúdo principal -->
+  <div class="container py-5 mt-5">
+    <h1 class="text-center mb-5">Camisetas</h1>
+    <div class="row g-4">
+
+      <!-- Exemplo de Produto -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="Imagens/camiseta marvel homem aranha run.webp" class="card-img-top" alt="Camiseta Homem-Aranha Run" title="Camiseta Homem-Aranha Run">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camiseta Homem-Aranha Run</h5>
+            <p class="card-text text-muted">R$ 69,90</p>
+            <a href="#" class="btn btn-outline-primary" aria-label="Comprar camiseta Homem-Aranha Run">
+              <i class="bi bi-cart"></i> Comprar
+            </a>
+          </div>
         </div>
-        <script>
-            function adicionarAoCarrinho(nome, preco) {
-              const produto = { nome, preco };
-              let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-              carrinho.push(produto);
-              localStorage.setItem('carrinho', JSON.stringify(carrinho));
-              alert(`${nome} foi adicionado ao carrinho!`);
-            }
-          </script>
-        
+      </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+      <!-- Repita os blocos abaixo com as camisetas restantes -->
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="Imagens/camiseta marvel homem aranha.webp" class="card-img-top" alt="Camiseta Homem-Aranha Clássica">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camiseta Homem-Aranha</h5>
+            <p class="card-text text-muted">R$ 69,90</p>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="Imagens/camiseta jujutsu.jpg" class="card-img-top" alt="Camiseta Jujutsu Kaisen">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camiseta Jujutsu Kaisen</h5>
+            <p class="card-text text-muted">R$ 69,90</p>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="Imagens/camiseta hunter x hunter.jpeg" class="card-img-top" alt="Camiseta Hunter x Hunter">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camiseta Hunter x Hunter</h5>
+            <p class="card-text text-muted">R$ 69,90</p>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="Imagens/camiseta rick and morty.webp" class="card-img-top" alt="Camiseta Rick and Morty">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camiseta Rick and Morty</h5>
+            <p class="card-text text-muted">R$ 69,90</p>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="Imagens/camiseta invicible.webp" class="card-img-top" alt="Camiseta Invincible">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camiseta Invincible</h5>
+            <p class="card-text text-muted">R$ 69,90</p>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="Imagens/camiseta it.webp" class="card-img-top" alt="Camiseta IT: A Coisa">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camiseta IT: A Coisa</h5>
+            <p class="card-text text-muted">R$ 69,90</p>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="Imagens/camiseta mortal kombat.webp" class="card-img-top" alt="Camiseta Mortal Kombat">
+          <div class="card-body text-center">
+            <h5 class="card-title">Camiseta Mortal Kombat</h5>
+            <p class="card-text text-muted">R$ 69,90</p>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2023 GeekStore. Todos os direitos reservados.</p>
-    <p>Desenvolvido por [Seu Nome]</p>
 </html>
