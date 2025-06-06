@@ -279,11 +279,52 @@ footer.footer {
   }
 
   .form-label {
-    color: #ff0000;
+    color: #000000;
     font-weight: 600;
   }
-  
- 
+    .form-control {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        color: #333;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-control:focus {
+        border-color: #0dcaf0;
+        box-shadow: 0 0 5px rgba(13, 202, 240, 0.5);
+        outline: none;
+    }
+
+    .btn-primary {
+        background-color: #21047e;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 1rem;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    .btn-success{
+        background-color: #21047e;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 1rem;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    .btn-primary:hover,
+    .btn-success:hover {
+        background-color: #0dcaf0;
+        transform: translateY(-2px);
+        color: #fff;
+    }
+    .fs-5 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #000000;
+    }
 
     
 
