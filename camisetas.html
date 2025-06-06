@@ -34,9 +34,8 @@
           <div class="card-body text-center">
             <h5 class="card-title">Camiseta Homem-Aranha Run</h5>
             <p class="card-text text-muted">R$ 69,90</p>
-            <a href="#" class="btn btn-outline-primary" aria-label="Comprar camiseta Homem-Aranha Run">
-              <i class="bi bi-cart"></i> Comprar
-            </a>
+            <a href="#" class="btn btn-outline-primary" onclick="adicionarAoCarrinho('Camiseta Homem-Aranha run', 69.90)">
+              <i class="bi bi-cart"></i> Comprar</a>
           </div>
         </div>
       </div>
@@ -49,7 +48,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Camiseta Homem-Aranha</h5>
             <p class="card-text text-muted">R$ 69,90</p>
-            <a href="#" class="btn btn-outline-primary">
+            <a href="#" class="btn btn-outline-primary" onclick="adicionarAoCarrinho('Camiseta Homem-Aranha', 69.90)">
               <i class="bi bi-cart"></i> Comprar
             </a>
           </div>
@@ -62,7 +61,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Camiseta Jujutsu Kaisen</h5>
             <p class="card-text text-muted">R$ 69,90</p>
-            <a href="#" class="btn btn-outline-primary">
+            <a href="#" class="btn btn-outline-primary" onclick="adicionarAoCarrinho('Camiseta jujutsu Kaisen', 69.90)">
               <i class="bi bi-cart"></i> Comprar
             </a>
           </div>
@@ -75,7 +74,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Camiseta Hunter x Hunter</h5>
             <p class="card-text text-muted">R$ 69,90</p>
-            <a href="#" class="btn btn-outline-primary">
+            <a href="#" class="btn btn-outline-primary "onclick="adicionarAoCarrinho('Camiseta Hunter x Hunter', 69.90)">
               <i class="bi bi-cart"></i> Comprar
             </a>
           </div>
@@ -88,7 +87,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Camiseta Rick and Morty</h5>
             <p class="card-text text-muted">R$ 69,90</p>
-            <a href="#" class="btn btn-outline-primary">
+            <a href="#" class="btn btn-outline-primary "onclick="adicionarAoCarrinho('Camiseta Rick and Morty', 69.90)">
               <i class="bi bi-cart"></i> Comprar
             </a>
           </div>
@@ -101,7 +100,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Camiseta Invincible</h5>
             <p class="card-text text-muted">R$ 69,90</p>
-            <a href="#" class="btn btn-outline-primary">
+            <a href="#" class="btn btn-outline-primary "onclick="adicionarAoCarrinho('Camiseta Invincible', 69.90)">
               <i class="bi bi-cart"></i> Comprar
             </a>
           </div>
@@ -114,7 +113,7 @@
           <div class="card-body text-center">
             <h5 class="card-title">Camiseta IT: A Coisa</h5>
             <p class="card-text text-muted">R$ 69,90</p>
-            <a href="#" class="btn btn-outline-primary">
+            <a href="#" class="btn btn-outline-primary "onclick="adicionarAoCarrinho('Camiseta IT: A coisa', 69.90)">
               <i class="bi bi-cart"></i> Comprar
             </a>
           </div>
@@ -127,15 +126,41 @@
           <div class="card-body text-center">
             <h5 class="card-title">Camiseta Mortal Kombat</h5>
             <p class="card-text text-muted">R$ 69,90</p>
-            <a href="#" class="btn btn-outline-primary">
+            <a href="#" class="btn btn-outline-primary "onclick="adicionarAoCarrinho('Camiseta Mortal Kombat', 69.90)">
               <i class="bi bi-cart"></i> Comprar
             </a>
           </div>
         </div>
       </div>
-
     </div>
   </div>
+
+<script>
+  function adicionarAoCarrinho(nome, preco) {
+    // salva no localStorage
+    const produto = { nome, preco };
+    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    carrinho.push(produto);
+    localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+    // mensagem via Toast ------------------------------------
+    const toastBody = document.getElementById('toastBody');
+    toastBody.textContent = `al"${nome}" foi adicionado ao carrinho.`;
+
+    const toastEl = document.getElementById('toastCarrinho');
+    const toast = bootstrap.Toast.getOrCreateInstance(toastEl, { delay: 2500 });
+    toast.show();
+}
+</script>
+
+  
+  <div id="footer"></div> 
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data)
+      .catch(error => console.error('Erro ao carregar o rodapé:', error));
+  </script>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
