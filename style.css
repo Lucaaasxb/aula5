@@ -173,7 +173,25 @@ body {
     height: 500px;
     max-width: 100%;
     object-fit: cover;
-
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Custom styles for the toast notifications */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1080; /* Ensure it appears above other content */
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #343a40; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .toast-container { z-index: 1080; }
